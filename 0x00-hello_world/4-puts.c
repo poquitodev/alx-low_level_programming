@@ -1,6 +1,6 @@
 #include <stdio>
 int main(){
-puts("Hello, world!")
+puts("\"Programming is like building a multilingual puzzle")
 
 
 return 0;
