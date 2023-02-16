@@ -14,7 +14,7 @@ int main(void)
 	int b = sizeof(1);
 	int c = sizeof(2147483647);
 	long d = sizeof(9223372036854775807);
-       float e = sizeof(1.0);	
+       float e = sizeof(3.14);	
 	printf("Size of a char: %d byte(s\n)",a);
 	printf("Size of an int: %d byte(s)\n",b);
 	printf("Size of a long int: %d byte(s)\n",c);
