@@ -1,25 +1,18 @@
-#include <stdio.h>
+ #include <stdio.h>
 
 /**
- * main - Entry point
- *
- * Description: A C program that prints with put function
+ * main - A program that prints the size of various types on the computer it is
+ * compiled and run on.
  *
  * Return: Always 0 (Success)
-*/
-
+ */
 int main(void)
-{
-	char a = sizeof("a");
-	int b = sizeof(1);
-	int c = sizeof(2147483647);
-	long d = sizeof(9223372036854775807);
-       float e = sizeof(float);	
-	printf("Size of a char: %d byte(s\n)",a);
-	printf("Size of an int: %d byte(s)\n",b);
-	printf("Size of a long int: %d byte(s)\n",c);
-	printf("Size of a long long int: %d byte(s)\n",d);
-	printf("Size of a float: %d byte(s)\n",e);
 
-	return (0);
+{
+printf("Size of a char: %lu byte(s)\n", sizeof(char));
+printf("Size of an int: %lu byte(s)\n", sizeof(int));
+printf("Size of a long int: %lu byte(s)\n", sizeof(long int));
+printf("Size of a long long int: %lu byte(s)\n", sizeof(long long int));
+printf("Size of a float: %lu byte(s)\n", sizeof(float));
+return (0);
 }
