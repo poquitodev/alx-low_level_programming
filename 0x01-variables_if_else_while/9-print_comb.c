@@ -20,7 +20,10 @@ int main(void)
 		putchar(',');
 		putchar(' ');
 		}
+		if (i == 57)
+		{
+			putchar(i);
+		}
 	}
-	putchar(i);
 	return (0);
 }
