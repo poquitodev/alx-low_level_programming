@@ -15,7 +15,7 @@ int main(void)
 
 	for (i = 0; i < 27; i++)
 	{
-		putchar(c);
+		putchar(c[i]);
 	}
 	return (0);
 }
