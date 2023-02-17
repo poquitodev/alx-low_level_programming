@@ -15,7 +15,7 @@ int main(void)
 
 	for (i = 0; i < 26; i++)
 	{
-		if (c[i] != 'q' || c[i] != 'e')
+		if (c[i] != 'q' && c[i] != 'e')
 		{
 			putchar(c[i]);
 		}
