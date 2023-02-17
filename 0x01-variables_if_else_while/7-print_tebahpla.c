@@ -13,7 +13,7 @@ int main(void)
 	int i;
 	char c[26] = "abcdefghijklmnopqrstuvwxyz";
 
-	for (i = 26; i > 0; i--)
+	for (i = 25; i >= 0; i--)
 	{
 		putchar(c[i]);
 	}
