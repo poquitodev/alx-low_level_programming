@@ -19,11 +19,11 @@ int main(void)
 		{
 			putchar(',');
 			putchar(' ');
+		}
 		if (i == 57)
 		{
 			putchar('\n');
 		}
-	}
 	return (0);
 }
 }
