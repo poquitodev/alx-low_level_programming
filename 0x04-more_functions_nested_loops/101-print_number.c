@@ -9,21 +9,19 @@
  */
 void print_number(int n)
 {
-	int mil;
-	int cent;
-	int tens;
-	int last_digit;
+	unsigned int num = n;
 
-	if (n / 1000 > 1)
-		mil = n / 1000;
-	if (n / 100 > 1)
-		cent = n / 100;
-	if (n / 10 > 1)
-		tens = n / 10;
-	last_digit = n % 10;
-		_putchar(mil + '0');
-	_putchar(cent + '0');
-	_putchar(tens + '0');
-	_putchar(last_digit + '0');
-	_putchar('\n');
+	/*first check if its negative*/
+	if (n < 0)
+	{
+		_putchar('-');
+		num = -num;
+	}
+
+	/*print the first few digits*/
+	if ((num / 10) > 0)
+		print_number(num / 10);
+
+	/*print the last digit*/
+	_putchar((num % 10) + 48);
 }
